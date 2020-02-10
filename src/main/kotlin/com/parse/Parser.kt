@@ -18,7 +18,7 @@ class Parser {
 
         val chromeOptions = ChromeOptions()
 
-        chromeOptions.setHeadless(true)
+       // chromeOptions.setHeadless(true)
 
         val browser: WebDriver = ChromeDriver(chromeOptions)
 
@@ -51,13 +51,9 @@ class Parser {
                                 game[teamDivs[i].text] = scoreDivs[i].text
                             }
 
-
-
                             games.add(game)
 
                         }
-
-
 
                     } finally {
                         println("can't find!")
